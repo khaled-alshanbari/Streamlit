@@ -14,6 +14,7 @@ def create_db_connection(host_name='sql7.freemysqlhosting.net', user_name='sql76
             database=db_name
         )
         streamlit.info("MySQL Database connection successful")
+        
     except Error as err:
         streamlit.info(f"Error: '{err}'")
 
@@ -45,6 +46,7 @@ def read_query(connection, query):
     try:
         cursor.execute(query)
         result = cursor.fetchall()
+        streamlit.info("Info Pull successful")
         return result
     except Error as err:
         streamlit.info(f"Error: '{err}'")
