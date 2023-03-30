@@ -4,7 +4,7 @@ from mysql.connector import Error
 import pandas as pd
 
 
-def create_db_connection(host_name='sql7.freemysqlhosting.net', user_name='sql7609688', user_password='zueRf6BIf4', db_name='streamlit'):
+def create_db_connection(host_name='sql7.freemysqlhosting.net', user_name='sql7609688', user_password='zueRf6BIf4', db_name='sql7609688'):
     connection = None
     try:
         connection = mysql.connector.connect(
